@@ -1,6 +1,18 @@
-# MetroPulse App Scaffold
+# MetroPulse App
 
-Frontend-only React + TypeScript starter for the WMATA-powered MetroPulse dashboard.
+This is my personal project, built and maintained independently.
+
+## Project Intent
+
+MetroPulse is a React + TypeScript application that aims to replicate WMATA app-style transit features by using official public WMATA developer APIs:
+
+- https://developer.wmata.com/apis
+
+The project is implemented from public API documentation and original code only.
+
+## Personal Use Note
+
+This repository is for personal project and learning purposes.
 
 ## Setup
 
