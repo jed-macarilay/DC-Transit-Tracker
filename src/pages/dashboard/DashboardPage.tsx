@@ -17,13 +17,16 @@ export function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-3">
-        <article className="rounded-xl bg-white p-4 shadow-sm xl:col-span-2">
-          <h2 className="text-lg font-semibold text-slate-900">Next Train Arrivals</h2>
+        <article className="rounded-xl border border-metro-slate/10 bg-white p-4 shadow-sm xl:col-span-2">
+          <h2 className="text-lg font-semibold text-metro-navy">Next Train Arrivals</h2>
           <div className="mt-3 space-y-2">
             {mockArrivals.map((row) => (
-              <div key={`${row.line}-${row.destination}`} className="flex items-center justify-between rounded-lg border p-3">
+              <div
+                key={`${row.line}-${row.destination}`}
+                className="flex items-center justify-between rounded-lg border border-metro-slate/15 bg-emerald-50/30 p-3"
+              >
                 <div className="flex items-center gap-2">
-                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-metro-navy text-xs font-semibold text-white">
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-metro-mint text-xs font-semibold text-metro-navy">
                     {row.line}
                   </span>
                   <span className="text-sm font-medium">{row.destination}</span>
@@ -34,12 +37,12 @@ export function DashboardPage() {
           </div>
         </article>
 
-        <article className="rounded-xl bg-white p-4 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Service Status</h2>
+        <article className="rounded-xl border border-metro-slate/10 bg-white p-4 shadow-sm">
+          <h2 className="text-lg font-semibold text-metro-navy">Service Status</h2>
           <ul className="mt-3 space-y-2 text-sm">
-            <li className="rounded-lg bg-green-50 p-2 text-green-800">Red Line: Normal</li>
-            <li className="rounded-lg bg-yellow-50 p-2 text-yellow-800">Blue Line: Minor Delays</li>
-            <li className="rounded-lg bg-red-50 p-2 text-red-800">Silver Line: Single Tracking</li>
+            <li className="rounded-lg border border-emerald-200 bg-emerald-50 p-2 text-emerald-800">Red Line: Normal</li>
+            <li className="rounded-lg border border-amber-200 bg-amber-50 p-2 text-amber-800">Blue Line: Minor Delays</li>
+            <li className="rounded-lg border border-rose-200 bg-rose-50 p-2 text-rose-800">Silver Line: Single Tracking</li>
           </ul>
         </article>
       </div>
