@@ -5,9 +5,10 @@ export default {
     extend: {
       colors: {
         metro: {
-          navy: "#0f1f3d",
-          slate: "#3d4e68",
-          cloud: "#f4f7fb"
+          navy: "#101214",
+          slate: "#2b2f33",
+          cloud: "#f5f7f6",
+          mint: "#2ecc71"
         }
       }
     }
