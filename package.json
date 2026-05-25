@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node -e \"const p=require('path');const cp=require('child_process');const root=p.dirname(process.env.npm_package_json);cp.execFileSync(process.execPath,[p.join(root,'node_modules/typescript/bin/tsc'),'-b'],{stdio:'inherit'});cp.execFileSync(process.execPath,[p.join(root,'node_modules/vite/bin/vite.js'),'build'],{stdio:'inherit'});\"",
     "preview": "vite preview"
   },
   "dependencies": {
